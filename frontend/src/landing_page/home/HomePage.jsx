@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Awards from "./Awards";
 import Stats from "./Stats";
 import Pricing from "./Pricing";
+import Education from "./Education";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Awards />
       <Stats />
       <Pricing />
+      <Education />
     </div>
   );
 }
