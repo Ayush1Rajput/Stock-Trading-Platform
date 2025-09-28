@@ -5,6 +5,8 @@ import Stats from "./Stats";
 import Pricing from "./Pricing";
 import Education from "./Education";
 import Navbar from "../Navbar";
+import OpenAccount from "../OpenAccount";
+import Footer from "../Footer";
 
 export default function HomePage() {
   return (
@@ -15,6 +17,8 @@ export default function HomePage() {
       <Stats />
       <Pricing />
       <Education />
+      <OpenAccount />
+      <Footer />
     </div>
   );
 }
