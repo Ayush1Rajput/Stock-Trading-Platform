@@ -11,12 +11,12 @@ function Team() {
         className="row p-3 text-muted"
         style={{ lineHeight: "1.8", fontSize: "1.2em" }}
       >
-        <div className="col-6 p-3 text-center">
+        <div className="col-6 p-2 text-center">
           <img
             src="media/images/nithinKamath.jpg"
-            style={{ borderRadius: "100%", width: "60%" }}
+            style={{ borderRadius: "100%", width: "45%" }}
           />
-          <h4 className="mt-5">Nithin Kamath</h4>
+          <h4 className="mt-4">Nithin Kamath</h4>
           <h6>Founder, CEO</h6>
         </div>
         <div className="col-6 p-3">
