@@ -9,9 +9,9 @@ function Hero() {
           Sleek, modern and intuitive trading platforms
         </h3>
         <p className="mt-3 mb-5">
-          Check out our
+          Check out our {/* use this {" "} for add non-bracking space   */}
           <a href="" style={{ textDecoration: "none" }}>
-            investment offerings
+            investment offerings{" "}
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
         </p>
