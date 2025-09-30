@@ -3,6 +3,7 @@ import React from "react";
 import Hero from "./Hero";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
+import Universe from "./Universe";
 
 function PricingPage() {
   return (
@@ -51,6 +52,7 @@ function PricingPage() {
         Want to know more about our technology stack? Check out the Zerodha.tech
         blog.
       </p>
+      <Universe />
     </>
   );
 }
