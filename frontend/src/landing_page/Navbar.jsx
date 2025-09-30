@@ -50,7 +50,7 @@ function Navbar() {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" to="#">
+                <Link class="nav-link active" to="/support">
                   Support
                 </Link>
               </li>
