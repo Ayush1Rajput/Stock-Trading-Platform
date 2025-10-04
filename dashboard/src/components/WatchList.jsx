@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Tooltip, Grow } from "@mui/material";
+import { keyboardArrowDown, keyboardArrowUp } from "@mui/icons-material";
 
 import { watchlist } from "../data/data.js";
 
@@ -20,7 +21,7 @@ const WatchList = () => {
 
       <ul className="list">
         {watchlist.map((stock, index) => {
-          <WatchListItem stock={stock} key={index} />;
+          return <WatchListItem stock={stock} key={index} />;
         })}
       </ul>
     </div>
@@ -28,3 +29,32 @@ const WatchList = () => {
 };
 
 export default WatchList;
+
+const WatchListItem = ({ stock }) => {
+  const [showWatchlistActions, setShowWatchlistActions] = useState(false);
+
+  const handleMouseEnter = (e) => {
+    setShowWatchlistActions(true);
+  };
+
+  const handleMouseLeave = (e) => {
+    setShowWatchlistActions(false);
+  };
+
+  return (
+    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className="item">
+        <p className={stock.isDown ? "down" : "up"}>{stock.name}</p>
+        <div className="itemInfo">
+          <span className="percent">{stock.percent}</span>
+          {stock.isDown ? (
+            <keyboardArrowDown className="down" />
+          ) : (
+            <keyboardArrowUp className="up" />
+          )}
+          <span className="price">{stock.price}</span>
+        </div>
+      </div>
+    </li>
+  );
+};
